@@ -1,5 +1,5 @@
 [Unit]
-Description=Kill des requetes supérieur a 2 min 30
+Description=Kill des requêtes supérieur à 2 min 30
 ConditionFileIsExecutable=/etc/sqlquerykiller.sh
 After=network.target
 
