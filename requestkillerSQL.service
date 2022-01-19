@@ -1,0 +1,12 @@
+[Unit]
+Description=Kill des requetes supérieur a 2 min 30
+ConditionFileIsExecutable=/etc/sqlquerykiller.sh
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/etc/sqlquerykiller.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
